@@ -22,7 +22,7 @@ public class Main
 			int cur = q.poll();
 			result.add(cur);
 
-			for (int i = 0; i < adj.get(i).size(); i++)
+			for (int i = 0; i < adj.get(cur).size(); i++)
 			{
 				int nxt = adj.get(cur).get(i);
 				indeg[nxt]--;
