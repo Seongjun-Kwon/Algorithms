@@ -29,15 +29,15 @@ public class Main
 				if (indeg[nxt] == 0)
 					q.offer(nxt);
 			}
-
-			if (result.size() != n)
-			{
-				System.out.println("Cycle exists!");
-				return;
-			}
-
-			for (int i = 0; i < n; i++)
-				System.out.println(result.get(i) + " ");
 		}
+		
+		if (result.size() != n)
+		{
+			System.out.println("Cycle exists!");
+			return;
+		}
+
+		for (int i = 0; i < n; i++)
+			System.out.println(result.get(i) + " ");
 	}
 }
